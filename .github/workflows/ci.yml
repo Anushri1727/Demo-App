@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches:[main]
+    branches: [main]
   pull_request:
-    branches:[main]
+    branches: [main]
 
 jobs:
   build:
@@ -16,5 +16,5 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run npm ci
-      - run npm run build
+      - run: npm ci
+      - run: npm run build
